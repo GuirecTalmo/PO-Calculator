@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(172deg 37% 71%);
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.main_content {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 950px;
+    height: 700px;
+    margin: auto;
+}
+
+.header_container {
+
+    display: flex;
+    max-height: 85px;
+    width: 100%;
+}
+
+.main_logo {
+
+display: block;
+margin: auto;
+}
+
+.box_calculatrice {
+
+    background-color: #fff;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 370px;
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 5px 15px 5px hsl(183deg 100% 15% / 20%);
+    box-shadow: 5px 5px 15px 5px hsl(183deg 100% 15% / 20%);
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.column_1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 43%;
+    padding: 10px;
+}
+
+.column_2 {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 43%;
+    padding: 25px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+}
+
+.bill_container{
+
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.tips_container{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+
+.label_bill{
+
+    width: 100%;
+    max-height: 30px;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 10px;
+}
+
+.input_bill{
+
+    width: 100%;
+    height: 35px;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    background-color: hsl(185, 41%, 84%);
+
+}
+
+.label_tips{
+
+    width: 100%;
+    max-height: 30px;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 10px;
+}
+
+.button_discount {
+
+    width: 105px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.button_discount:hover {
+
+    width: 105px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    background-color: hsl(183, 100%, 26%);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.buttonCustom_discount {
+
+    width: 105px;
+    height: 40px;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.buttonCustom_discount:hover {
+
+    width: 105px;
+    height: 40px;
+    color: hsl(185, 41%, 84%);
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.number_container{
+
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.label_number{
+
+    width: 100%;
+    max-height: 30px;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: hsl(183, 100%, 15%);
+    margin-bottom: 10px;
+}
+
+.input_number{
+
+    width: 100%;
+    height: 35px;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    background-color: hsl(185, 41%, 84%);
+
+}
+
+.amounttip_container {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.total_container {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.font_calcul {
+
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.subfont_calcul {
+
+    font-size: 0.8rem;
+    color: rgb(223, 223, 223);
+    font-weight: 400;
+}
+
+.font_total{
+
+    font-size: 3rem;
+    color: hsl(172, 67%, 45%);
+    font-weight: 400;
+
+}
+
+.reset_container {
+
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.reset_button {
+
+    width: 100%;
+    height: 40px;
+    color: hsl(183, 100%, 14%);
+    border: none;
+    background-color: hsl(183, 100%, 19%);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.reset_button:hover {
+
+    width: 100%;
+    height: 40px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    background-color: hsl(183, 100%, 26%);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.attribution { 
+    
+    font-size: 11px; 
+    text-align: center; 
+    width: 100%;
+
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    
+    }

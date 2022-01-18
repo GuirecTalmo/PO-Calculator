@@ -5,40 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./assets/js/scripts.js"></script>
   
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Bill
+  <main class="main_content">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <header class="header_container">
+      <img class="main_logo" src="./assets/images/logo.svg" alt="logo">
+    </header>
 
-  Number of People
+    <div class="box_calculatrice">
 
-  Tip Amount
-  / person
+      <div class="column_1">
 
-  Total
-  / person
+        <div class="bill_container">
+          
+          <label class="label_bill" for="name">Bill</label>
 
-  Reset
+          <input class="input_bill" type="text" id="name" name="name" required
+          minlength="4" maxlength="8" size="10">
+        </div>
+
+        <div class="tips_container">
+          <label class="label_bill" for="name">Select Tip %</label>
+           <button class="button_discount">5%</button>
+           <button class="button_discount">10%</button>
+           <button class="button_discount">15%</button>
+           <button class="button_discount">25%</button>
+           <button class="button_discount">50%</button>
+           <button class="buttonCustom_discount">Custom</button>   
+            
+        </div>
+        
+        <div class="number_container">
+          <label class="label_number" for="name">Number of People</label>
+
+          <input class="input_number" type="text" id="name" name="name" required
+          minlength="4" maxlength="8" size="10">
+        </div>
   
-  <div class="attribution">
+      </div>
+
+      <div class="column_2">
+
+        <div class="amounttip_container">
+          <div>
+            <p class="font_calcul">Tip Amount</p>
+            <p class="subfont_calcul">/ person</p>
+          </div>
+          
+          <div>
+            <p class="font_total">$0.00</p>
+          </div>
+        
+              
+        </div>
+       
+        <div class="total_container">
+          <div>
+            <p class="font_calcul">Total</p>
+            <p class="subfont_calcul">/ person</p>
+          </div>
+          
+          <div>
+            <p class="font_total">$0.00</p>
+          </div>
+        </div>
+        
+        <div class="reset_container">
+          <button class="reset_button">Reset</button>
+         
+        </div>
+        
+      </div>
+
+    </div>
+<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  </main>
+  
+  
+  
 </body>
 </html>
