@@ -28,26 +28,26 @@
           
           <label class="label_bill" for="name">Bill</label>
 
-          <input class="input_bill" type="text" id="name" name="name" required
-          minlength="4" maxlength="8" size="10">
+          <input class="input_bill" type="text" id="bill" name="name" required
+          minlength="1" maxlength="4" size="10">
         </div>
 
         <div class="tips_container">
           <label class="label_bill" for="name">Select Tip %</label>
-           <button class="button_discount">5%</button>
-           <button class="button_discount">10%</button>
-           <button class="button_discount">15%</button>
-           <button class="button_discount">25%</button>
-           <button class="button_discount">50%</button>
-           <button class="buttonCustom_discount">Custom</button>   
+           <button class="button_discount" id="disc5" onclick="getValue(this);">5</button>
+           <button class="button_discount" id="disc10" onclick="getValue(this);">10</button>
+           <button class="button_discount" id="disc15" onclick="getValue(this);">15</button>
+           <button class="button_discount" id="disc25" onclick="getValue(this);">25</button>
+           <button class="button_discount" id="disc50" onclick="getValue(this);">50</button>
+           <button class="buttonCustom_discount" onclick="getValue();">Custom</button>   
             
         </div>
         
         <div class="number_container">
-          <label class="label_number" for="name">Number of People</label>
+          <label class="label_number">Number of People</label>
 
-          <input class="input_number" type="text" id="name" name="name" required
-          minlength="4" maxlength="8" size="10">
+          <input class="input_number" type="text" id="people" name="name" required
+          minlength="1" maxlength="4" size="10">
         </div>
   
       </div>
@@ -61,7 +61,7 @@
           </div>
           
           <div>
-            <p class="font_total">$0.00</p>
+            <p class="font_total_tip" id="total_tip">$</p>
           </div>
         
               
@@ -74,12 +74,12 @@
           </div>
           
           <div>
-            <p class="font_total">$0.00</p>
+            <p class="font_total" id="total_person">$</p>
           </div>
         </div>
         
         <div class="reset_container">
-          <button class="reset_button">Reset</button>
+          <button class="reset_button" onclick="reset()" value="reset" >Reset</button>
          
         </div>
         
@@ -90,6 +90,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  
   </main>
   
   

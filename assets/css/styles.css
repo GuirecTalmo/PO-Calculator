@@ -220,6 +220,14 @@ margin: auto;
     font-weight: 400;
 }
 
+.font_total_tip{
+
+    font-size: 3rem;
+    color: hsl(172, 67%, 45%);
+    font-weight: 400;
+
+}
+
 .font_total{
 
     font-size: 3rem;
