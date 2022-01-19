@@ -10,30 +10,48 @@ function getValue(ele) {
     let totalTip = document.querySelector('.font_total_tip');
     let totalPerson = document.querySelector('.font_total');
 
+
+    if (billAmount <= 0) {
+
+        let invalidNumber = alert('You eat for free ?!')
+
+        return invalidNumber
+        
+    }
+
+    if (peopleAmount <= 0) {
+
+        let invalidNumber = alert('Please enter a number of person')
+
+        return invalidNumber
+        
+    }
+
     if (billAmount >= 1) {
 
         let tipsAmount = 0;
         let totalAmount = 0;
         console.log(billAmount);
         console.log(percentButton);
-        tipsAmount = Math.round(billAmount / 100 * percentButton);
+        tipsAmount = (billAmount / 100 * percentButton).toFixed(2);
         console.log(tipsAmount);
+        document.getElementById("total_tip").innerHTML = ""; 
         totalTip.append(tipsAmount);
-        totalAmount = Math.round(tipsAmount / peopleAmount);
-        totalPerson.append(totalAmount);
-
-        return totalAmount;
+        totalAmount = (billAmount / peopleAmount).toFixed(2);
+        document.getElementById("total_person").innerHTML = ""; 
+        totalPerson.append(totalAmount);     
     }
 
+    return totalAmount;
 }
 
 function reset() {
     
     document.getElementById("bill").value = "";
     document.querySelector('.button_discount').value = "";
-    document.getElementById("total_tip").innerHTML = ""; 
+    document.getElementById("total_tip").innerHTML = "$0.00"; 
     document.getElementById("people").value = "";
-    document.getElementById("total_person").innerHTML = ""; 
+    document.getElementById("total_person").innerHTML = "$0.00"; 
 
 }
 
