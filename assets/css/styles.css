@@ -94,15 +94,23 @@ margin: auto;
     margin-bottom: 10px;
 }
 
-.input_bill{
-
-    width: 100%;
+.input_bill {
+    width: 90%;
     height: 35px;
     color: hsl(183, 100%, 15%);
     border: none;
     background-color: hsl(185, 41%, 84%);
     border-radius: 5px;
-
+    text-align: right;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-image: url("../images/icon-dollar.svg");
+    background-position: left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .label_tips{
@@ -184,12 +192,22 @@ margin: auto;
 
 .input_number{
 
-    width: 100%;
+    width: 90%;
     height: 35px;
     color: hsl(183, 100%, 15%);
     border: none;
     background-color: hsl(185, 41%, 84%);
     border-radius: 5px;
+    text-align: right;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-image: url("../images/icon-person.svg");
+    background-position: left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    font-weight: 600;
+    font-size: 1rem;
 
 }
 
@@ -373,6 +391,45 @@ and (max-device-width : 480px) {
         font-size: 2rem;
         color: hsl(172, 67%, 45%);
         font-weight: 400;
+    }
+
+    .input_bill {
+        width: 90%;
+        height: 35px;
+        color: hsl(183, 100%, 15%);
+        border: none;
+        background-color: hsl(185, 41%, 84%);
+        border-radius: 5px;
+        text-align: right;
+        padding-right: 5%;
+        padding-left: 5%;
+        background-image: url("../images/icon-dollar.svg");
+        background-position: left;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .input_number{
+
+        width: 90%;
+        height: 35px;
+        color: hsl(183, 100%, 15%);
+        border: none;
+        background-color: hsl(185, 41%, 84%);
+        border-radius: 5px;
+        text-align: right;
+        padding-right: 5%;
+        padding-left: 5%;
+        background-image: url("../images/icon-person.svg");
+        background-position: left;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        font-weight: 600;
+        font-size: 1rem;
     }
 
 }
