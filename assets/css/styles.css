@@ -301,6 +301,11 @@ margin: auto;
     
     }
 
+button {
+
+    cursor: pointer;
+}
+
 
     /*
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
