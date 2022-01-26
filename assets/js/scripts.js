@@ -84,10 +84,10 @@ function getValue(ele) {
         tipsAmount = (billAmount / 100 * percentButton).toFixed(2);
         console.log(tipsAmount);
         document.getElementById("total_tip").innerHTML = ""; 
-        totalTip.append(tipsAmount);
+        totalTip.append('$' + tipsAmount);
         totalAmount = (billAmount / peopleAmount).toFixed(2);
         document.getElementById("total_person").innerHTML = ""; 
-        totalPerson.append(totalAmount);     
+        totalPerson.append('$' + totalAmount);     
     }
 
 }
