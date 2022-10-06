@@ -1,97 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <link rel="stylesheet" href="./assets/css/queries.css">
-  <script src="./assets/js/scripts.js"></script>
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
 
-</head>
-<body>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main class="main_content">
+      <header class="header_container">
+        <img class="main_logo" src="./assets/images/logo.svg" alt="logo" />
+      </header>
 
-  <main class="main_content">
+      <div class="box_calculatrice">
+        <div class="column_1">
+          <div class="bill_container">
+            <label class="label_bill" for="name">Bill</label>
 
-    <header class="header_container">
-      <img class="main_logo" src="./assets/images/logo.svg" alt="logo">
-    </header>
+            <input
+              class="input_bill"
+              type="number"
+              id="bill"
+              required
+              minlength="1"
+              maxlength="4"
+              size="10"
+              placeholder="0"
+            />
+          </div>
 
-    <div class="box_calculatrice">
+          <div class="tips_container">
+            <label class="label_bill" for="name">Select Tip %</label>
+            <button
+              class="button_discount"
+              id="disc5"
+              value="5"
+              onclick="getValue(this);"
+            >
+              5%
+            </button>
+            <button
+              class="button_discount"
+              id="disc10"
+              value="10"
+              onclick="getValue(this);"
+            >
+              10%
+            </button>
+            <button
+              class="button_discount"
+              id="disc15"
+              value="15"
+              onclick="getValue(this);"
+            >
+              15%
+            </button>
+            <button
+              class="button_discount"
+              id="disc25"
+              value="25"
+              onclick="getValue(this);"
+            >
+              25%
+            </button>
+            <button
+              class="button_discount"
+              id="disc50"
+              value="50"
+              onclick="getValue(this);"
+            >
+              50%
+            </button>
+            <button
+              class="buttonCustom_discount"
+              id="disc"
+              value=""
+              onclick="getcustomValue(this);"
+            >
+              Custom
+            </button>
+          </div>
 
-      <div class="column_1">
+          <div class="number_container">
+            <label class="label_number">Number of People</label>
 
-        <div class="bill_container">
-          
-          <label class="label_bill" for="name">Bill</label>
-
-          <input class="input_bill" type="number" id="bill" required
-          minlength="1" maxlength="4" size="10" placeholder="0">
+            <input
+              class="input_number"
+              type="number"
+              id="people"
+              name="name"
+              required
+              minlength="1"
+              maxlength="4"
+              size="10"
+              placeholder="0"
+            />
+          </div>
         </div>
 
-        <div class="tips_container">
-          <label class="label_bill" for="name">Select Tip %</label>
-           <button class="button_discount" id="disc5" value="5" onclick="getValue(this);">5%</button>
-           <button class="button_discount" id="disc10" value="10" onclick="getValue(this);">10%</button>
-           <button class="button_discount" id="disc15" value="15" onclick="getValue(this);">15%</button>
-           <button class="button_discount" id="disc25" value="25" onclick="getValue(this);">25%</button>
-           <button class="button_discount" id="disc50" value="50" onclick="getValue(this);">50%</button>
-           <button class="buttonCustom_discount" id="disc" value="" onclick="getcustomValue(this);" >Custom</button>   
-            
-        </div>
-        
-        <div class="number_container">
-          <label class="label_number">Number of People</label>
+        <div class="column_2">
+          <div class="amounttip_container">
+            <div>
+              <p class="font_calcul">Tip Amount</p>
+              <p class="subfont_calcul">/ person</p>
+            </div>
 
-          <input class="input_number" type="number" id="people" name="name" required
-          minlength="1" maxlength="4" size="10" placeholder="0">
+            <div>
+              <p class="font_total_tip" id="total_tip">$0.00</p>
+            </div>
+          </div>
+
+          <div class="total_container">
+            <div>
+              <p class="font_calcul">Total</p>
+              <p class="subfont_calcul">/ person</p>
+            </div>
+
+            <div>
+              <p class="font_total" id="total_person">$0.00</p>
+            </div>
+          </div>
+
+          <div class="reset_container">
+            <button class="reset_button" onclick="reset()" value="reset">
+              Reset
+            </button>
+          </div>
         </div>
-  
       </div>
+    </main>
 
-      <div class="column_2">
-
-        <div class="amounttip_container">
-          <div>
-            <p class="font_calcul">Tip Amount</p>
-            <p class="subfont_calcul">/ person</p>
-          </div>
-          
-          <div>
-            <p class="font_total_tip" id="total_tip">$0.00</p>
-          </div>
-        
-              
-        </div>
-       
-        <div class="total_container">
-          <div>
-            <p class="font_calcul">Total</p>
-            <p class="subfont_calcul">/ person</p>
-          </div>
-          
-          <div>
-            <p class="font_total" id="total_person">$0.00</p>
-          </div>
-        </div>
-        
-        <div class="reset_container">
-          <button class="reset_button" onclick="reset()" value="reset" >Reset</button>
-         
-        </div>
-        
-      </div>
-
-    </div>
-
-  
-  </main>
-  
-  
-  
-</body>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
 </html>
